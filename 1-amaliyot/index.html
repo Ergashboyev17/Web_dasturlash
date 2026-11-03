@@ -1,10 +1,105 @@
 <!DOCTYPE html>
 <html lang="uz">
-    <head>
-        <title>Oquv markazimizga xush kelibsiz!</title>
-    </head>
-    <body>
-        <iframe width="1323" height="744" src="https://www.youtube.com/shorts/5MhxHguBbcQ" title="CHAB FT ASL WAYNE - QORNIM OCH" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <h1>O'QUV MARKAZIMIZ HAQIDA</h1>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelajak O'quv Markazi</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">KelajakEdu</div>
+                <ul class="nav-links">
+                    <li><a href="#about">Biz haqimizda</a></li>
+                    <li><a href="batafsil.html">Batafsil</a></li>
+                    <li><a href="#contact">Aloqa</a></li>
+                </ul>
+                <a href="#contact" class="btn-primary">Azo bo'lish</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Sektsiya -->
+    <section class="hero">
+        <div class="container">
+            <h1>Kelajak Kasblarini Biz Bilan O'rganing</h1>
+            <p>Zamonaviy sohalar bo'yicha amaliy bilimlarga ega bo'ling va o'z karyerangizni yangi bosqichga olib chiqing.</p>
+            <a href="#courses" class="btn-secondary">Kurslarni Ko'rish</a>
+        </div>
+    </section>
+
+    <!-- Kurslar Bo'limi -->
+    <section class="courses" id="courses">
+        <div class="container">
+            <h2 class="section-title">Bizning Kurslar</h2>
+            <div class="course-grid">
+                
+                <div class="course-card">
+                    <h3>Frontend Dasturlash</h3>
+                    <p>HTML, CSS, JavaScript hamda React yordamida zamonaviy va interaktiv veb-saytlar yaratishni o'rganing.</p>
+                    <strong>Davomiyligi: 6 oy</strong>
+                </div>
+
+                <div class="course-card">
+                    <h3>Backend Dasturlash</h3>
+                    <p>Python (Django) va ma'lumotlar bazasi (SQL) bilan server arxitekturasi va mantiqiy jarayonlarni barpo eting.</p>
+                    <strong>Davomiyligi: 6 oy</strong>
+                </div>
+
+                <div class="course-card">
+                    <h3>Intensiv Ingliz Tili / IELTS</h3>
+                    <p>Grammatika, So'zlashuv va IELTS imtihonlariga tayyorgarlik bo'yicha maxsus metodikalar.</p>
+                    <strong>Davomiyligi: 4 oy</strong>
+                </div>
+
+                <div class="course-card">
+                    <h3>UI/UX Dizayn</h3>
+                    <p>Figma va Adobe XD orqali zamonaviy mobil ilova hamda veb-sayt interfeyslarini loyihalashni o'rganing.</p>
+                    <strong>Davomiyligi: 4 oy</strong>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Ariza Topshirish Formasi -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Bepul Konsultatsiyaga Yoziling</h2>
+            <div class="form-container">
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Ismingiz:</label>
+                        <input type="text" id="name" name="name" required placeholder="Masalan: Ali Valiyev">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefon raqamingiz:</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="+998 90 123 45 67">
+                    </div>
+                    <div class="form-group">
+                        <label for="course">Qaysi kursga qiziqyapsiz?</label>
+                        <select id="course" name="course">
+                            <option value="frontend">Frontend Dasturlash</option>
+                            <option value="backend">Backend Dasturlash</option>
+                            <option value="english">Ingliz tili / IELTS</option>
+                            <option value="design">UI/UX Dizayn</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="submit-btn">Arizani Yuborish</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 KelajakEdu O'quv Markazi. Barcha huquqlar himoyalangan.</p>
+        </div>
+    </footer>
+</body>
 </html>
