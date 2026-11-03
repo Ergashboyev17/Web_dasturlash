@@ -1,9 +1,117 @@
 <!DOCTYPE html>
 <html lang="uz">
-    <head>
-        <title>Batafsil</title>
-    </head>
-    <body>
-        <h1>O'quv </h1>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KelajakEdu - Batafsil va Dars Jadvali</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">KelajakEdu</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Bosh sahifa</a></li>
+                    <li><a href="batafsil.html" class="active">Batafsil</a></li>
+                    <li><a href="aloqa.html">Aloqa</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2 class="section-title">Kurslar Jadvali va Narxlari</h2>
+
+        <!-- HTML Jadvali (5 qator, 3 ustun, colspan, rowspan) -->
+        <div class="table-container">
+            <table>
+                <caption>2026-yil Kuzgi Semestr Mashg'ulotlar Rejasi</caption>
+                <thead>
+                    <tr>
+                        <th>Yo'nalish</th>
+                        <th>Kunlar va Vaqt</th>
+                        <th>Oylik To'lov</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Frontend Dasturlash</td>
+                        <td>Dush-Chor-Jum (09:00 - 11:00)</td>
+                        <td>800 000 so'm</td>
+                    </tr>
+                    <tr>
+                        <td>Dush-Chor-Jum (14:00 - 16:00)</td>
+                        <td>800 000 so'm</td>
+                    </tr>
+                    <tr>
+                        <td>Backend Dasturlash</td>
+                        <td>Sesh-Pay-Shan (10:00 - 12:00)</td>
+                        <td>900 000 so'm</td>
+                    </tr>
+                    <tr>
+                        <td>IELTS Preparatory</td>
+                        <td>Har kuni (15:00 - 17:00)</td>
+                        <td>700 000 so'm</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Maxsus Master-klass (Barcha talabalar uchun)</td>
+                        <td>Bepul</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Media Bo'limi -->
+        <h2 class="section-title">Markazimiz Hayotidan</h2>
+        <section class="media-container">
+            <figure>
+                <img src="rasmlar/photo_2026-11-03_15-20-19.jpg" alt="Zamonaviy kompyuter xonasi">
+                <figcaption>1-Rasm: Zamonaviy va shinam dars xonalarimiz</figcaption>
+            </figure>
+
+            <figure>
+                <img src="rasmlar/photo_2026-11-03_15-24-58.jpg" alt="O'quvchilar amaliyot jarayonida">
+                <figcaption>2-Rasm: O'quvchilarning real loyihalar ustida ishlashi</figcaption>
+            </figure>
+        </section>
+
+        <!-- Google Maps Iframe -->
+        <section class="video-box">
+            <h3>Bizning Xaritadagi Joylashuvimiz</h3>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d191885.50264005183!2d69.13928236140516!3d41.2825125437812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0cc379e9c3%3A0xa5a9323b4aa5cb98!2sTashkent%2C%20Uzbekistan!5e0!3m2!1sen!2s!4v1690000000000!5m2!1sen!2s" 
+                width="100%" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                title="KelajakEdu O'quv Markazi Joylashuvi">
+            </iframe>
+        </section>
+    </main>
+
+    <a href="#top" class="back-to-top" title="Yuqoriga">↑</a>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>KelajakEdu</h3>
+                    <p>Sifatli ta'lim va amaliy ko'nikmalar.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Sahifalar</h3>
+                    <p><a href="batafsil.html" style="color:#ccc;">Jadval</a></p>
+                    <p><a href="aloqa.html" style="color:#ccc;">Bog'lanish</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 KelajakEdu. Barcha huquqlar himoyalangan.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
 </html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KelajakEdu - Ariza Qoldirish</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body id="top">
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">KelajakEdu</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Bosh sahifa</a></li>
+                    <li><a href="batafsil.html">Batafsil</a></li>
+                    <li><a href="aloqa.html" class="active">Aloqa</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2 class="section-title">Kursga A'zo Bo'lish Uchun Ariza</h2>
+
+        <div class="form-container">
+            <form action="#" method="post">
+                
+                <!-- 1-maydon: Ism -->
+                <div class="form-group">
+                    <label for="fullname">To'liq ismingiz:</label>
+                    <input type="text" id="fullname" name="fullname" required placeholder="Masalan: Ali Valiyev">
+                </div>
+
+                <!-- 2-maydon: Email -->
+                <div class="form-group">
+                    <label for="email">Elektron pochta:</label>
+                    <input type="email" id="email" name="email" required placeholder="example@mail.com">
+                </div>
+
+                <!-- 3-maydon: Telefon (Regex Pattern bilan) -->
+                <div class="form-group">
+                    <label for="phone">Telefon raqamingiz (+998XXXXXXXXX):</label>
+                    <input type="tel" id="phone" name="phone" pattern="\+998[0-9]{9}" required placeholder="+998901234567">
+                </div>
+
+                <!-- 4-maydon: Tug'ilgan sana -->
+                <div class="form-group">
+                    <label for="birthdate">Tug'ilgan sanangiz:</label>
+                    <input type="date" id="birthdate" name="birthdate">
+                </div>
+
+                <!-- 5-maydon: Select (Kursni tanlash) -->
+                <div class="form-group">
+                    <label for="course">Qaysi kursni tanlaysiz?</label>
+                    <select id="course" name="course">
+                        <option value="frontend">Frontend Dasturlash</option>
+                        <option value="backend">Backend Dasturlash</option>
+                        <option value="english">IELTS Ingliz Tili</option>
+                    </select>
+                </div>
+
+                <!-- 6-maydon: Radio Group (Fieldset + Legend) -->
+                <fieldset>
+                    <legend>Dars vaqtini tanlang:</legend>
+                    <div class="radio-group">
+                        <input type="radio" id="morning" name="time_slot" value="morning" checked>
+                        <label for="morning">Ertalabki guruh (09:00)</label>
+                        
+                        <input type="radio" id="afternoon" name="time_slot" value="afternoon">
+                        <label for="afternoon">Tushdan keyingi guruh (14:00)</label>
+                    </div>
+                </fieldset>
+
+                <!-- 7-maydon: Checkbox -->
+                <div class="form-group">
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="rules" name="rules" required>
+                        <label for="rules">O'quv markaz qoidalari bilan tanishdim va roziman</label>
+                    </div>
+                </div>
+
+                <!-- 8-maydon: Textarea -->
+                <div class="form-group">
+                    <label for="comment">Qo'shimcha izoh yoki savollaringiz:</label>
+                    <textarea id="comment" name="comment" rows="4" placeholder="Savol yoki takliflaringizni shu yerga yozing..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Arizani Yuborish</button>
+
+            </form>
+        </div>
+    </main>
+
+    <a href="#top" class="back-to-top" title="Yuqoriga">↑</a>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>KelajakEdu</h3>
+                    <p>Biz bilan bog'laning hamda maqsadlaringiz sari qadam tashlang.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Bog'lanish</h3>
+                    <p>📍 Toshkent shahri</p>
+                    <p>📞 +998 90 123 45 67</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 KelajakEdu. Barcha huquqlar himoyalangan.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

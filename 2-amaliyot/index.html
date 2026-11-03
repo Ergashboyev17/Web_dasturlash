@@ -3,104 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kelajak O'quv Markazi</title>
-    <link rel="icon" href="./rasmlar/image.png" type="image/png">
-    <link rel="stylesheet" href="./CSS/style.css">
+    <title>KelajakEdu - Bosh sahifa</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body id="top">
 
-    <!-- Header -->
+    <!-- Header & Navigatsiya -->
     <header>
         <div class="container">
             <nav>
                 <div class="logo">KelajakEdu</div>
                 <ul class="nav-links">
-                    <li><a href="#about">Biz haqimizda</a></li>
-                    <li><a href="#courses">Kurslar</a></li>
-                    <li><a href="#contact">Aloqa</a></li>
+                    <li><a href="index.html" class="active">Bosh sahifa</a></li>
+                    <li><a href="batafsil.html">Batafsil</a></li>
+                    <li><a href="aloqa.html">Aloqa</a></li>
                 </ul>
-                <a href="#contact" class="btn-primary">Azo bo'lish</a>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Sektsiya -->
-    <section class="hero">
-        <div class="container">
-            <h1>Kelajak Kasblarini Biz Bilan O'rganing</h1>
-            <p>Zamonaviy sohalar bo'yicha amaliy bilimlarga ega bo'ling va o'z karyerangizni yangi bosqichga olib chiqing.</p>
-            <a href="#courses" class="btn-secondary">Kurslarni Ko'rish</a>
-        </div>
-    </section>
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Sektsiya -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>KelajakEdu Zamonaviy Kasblar Markazi</h1>
+                <p>Amaliy ko'nikmalar va tajribali ustozlar bilan o'z karyerangizni quring.</p>
+            </div>
+        </section>
 
-    <!-- Kurslar Bo'limi -->
-    <section class="courses" id="courses">
         <div class="container">
-            <h2 class="section-title">Bizning Kurslar</h2>
-            <div class="course-grid">
-                
-                <div class="course-card">
+            <h2 class="section-title">O'quv Yo'nalishlarimiz</h2>
+            
+            <section class="card-grid">
+                <article class="card">
+                    <span class="badge">Yangi</span>
                     <h3>Frontend Dasturlash</h3>
-                    <p>HTML, CSS, JavaScript hamda React yordamida zamonaviy va interaktiv veb-saytlar yaratishni o'rganing.</p>
-                    <strong>Davomiyligi: 6 oy</strong>
-                </div>
+                    <p>HTML5, CSS3, JavaScript hamda React texnologiyalarini noldan o'rganing.</p>
+                </article>
 
-                <div class="course-card">
+                <article class="card">
+                    <span class="badge">-15% Chegirma</span>
                     <h3>Backend Dasturlash</h3>
-                    <p>Python (Django) va ma'lumotlar bazasi (SQL) bilan server arxitekturasi va mantiqiy jarayonlarni barpo eting.</p>
-                    <strong>Davomiyligi: 6 oy</strong>
-                </div>
+                    <p>Python va Django framework yordamida server mantiqini barpo eting.</p>
+                </article>
 
-                <div class="course-card">
-                    <h3>Intensiv Ingliz Tili / IELTS</h3>
-                    <p>Grammatika, So'zlashuv va IELTS imtihonlariga tayyorgarlik bo'yicha maxsus metodikalar.</p>
-                    <strong>Davomiyligi: 4 oy</strong>
-                </div>
+                <article class="card">
+                    <h3>IELTS & Intensive English</h3>
+                    <p>Xalqaro standartlar bo'yicha ingliz tilida erkin so'zlashish va imtihonga tayyorgarlik.</p>
+                </article>
+            </section>
 
-                <div class="course-card">
-                    <h3>UI/UX Dizayn</h3>
-                    <p>Figma va Adobe XD orqali zamonaviy mobil ilova hamda veb-sayt interfeyslarini loyihalashni o'rganing.</p>
-                    <strong>Davomiyligi: 4 oy</strong>
-                </div>
-
-            </div>
+            <!-- Aside Bo'limi -->
+            <aside class="card">
+                <h3>📌 Muhim E'lon</h3>
+                <p>Yangi guruhlar uchun qabul 25-oktabrgacha davom etadi. Joylar soni chegaralangan!</p>
+            </aside>
         </div>
-    </section>
+    </main>
 
-    <!-- Ariza Topshirish Formasi -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2 class="section-title">Bepul Konsultatsiyaga Yoziling</h2>
-            <div class="form-container">
-                <form action="#" method="POST">
-                    <div class="form-group">
-                        <label for="name">Ismingiz:</label>
-                        <input type="text" id="name" name="name" required placeholder="Masalan: Ali Valiyev">
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Telefon raqamingiz:</label>
-                        <input type="tel" id="phone" name="phone" required placeholder="+998 90 123 45 67">
-                    </div>
-                    <div class="form-group">
-                        <label for="course">Qaysi kursga qiziqyapsiz?</label>
-                        <select id="course" name="course">
-                            <option value="frontend">Frontend Dasturlash</option>
-                            <option value="backend">Backend Dasturlash</option>
-                            <option value="english">Ingliz tili / IELTS</option>
-                            <option value="design">UI/UX Dizayn</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="submit-btn">Arizani Yuborish</button>
-                </form>
-            </div>
-        </div>
-    </section>
+    <!-- Fixed position tugmasi -->
+    <a href="#top" class="back-to-top" title="Yuqoriga">↑</a>
 
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 KelajakEdu O'quv Markazi. Barcha huquqlar himoyalangan.</p>
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>KelajakEdu</h3>
+                    <p>Sifatli ta'lim va zamonaviy kasblar markazi.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Tezkor Havolalar</h3>
+                    <p><a href="index.html" style="color:#ccc;">Bosh sahifa</a></p>
+                    <p><a href="aloqa.html" style="color:#ccc;">Ro'yxatdan o'tish</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 KelajakEdu. Barcha huquqlar himoyalangan.</p>
+            </div>
         </div>
     </footer>
+
 </body>
 </html>
